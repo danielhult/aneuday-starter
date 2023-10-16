@@ -1,0 +1,13 @@
+@mixin page-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2.4rem;
+}
+
+@for $col from 1 through 12 {
+  @for $span from 1 through 12 {
+    .col-#{$col}--span-#{$span} {
+      grid-column: #{$col} / span #{$span};
+    }
+  }
+}

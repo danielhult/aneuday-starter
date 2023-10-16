@@ -1,0 +1,38 @@
+.hero {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100ch;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__title {
+    color: var(--color-text--light);
+
+    span {
+      color: var(--color-text--dark);
+    }
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__play {
+    @include center-align;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    color: var(--color-text--white);
+    z-index: 2;
+
+    &__text {
+      @include fluid-type(430px, 1440px, 16px, 24px);
+    }
+  }
+}

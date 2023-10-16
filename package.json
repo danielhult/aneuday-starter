@@ -1,0 +1,20 @@
+{
+  "name": "aneuday-agency",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.69.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.26",
+    "gsap": "^3.12.2",
+    "split-type": "^0.3.3"
+  }
+}

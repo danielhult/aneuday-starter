@@ -1,0 +1,55 @@
+:root {
+  --section-small: 8rem;
+  --section-medium: 16rem;
+  --section-big: 24rem;
+
+  @include below(1200px) {
+    --section-small: 6.4rem;
+    --section-medium: 12rem;
+    --section-big: 16rem;
+  }
+
+  @include below(750px) {
+    --section-small: 4rem;
+    --section-medium: 8rem;
+    --section-big: 12rem;
+  }
+}
+
+.section--relative {
+  position: relative;
+}
+
+.section--small--padding {
+  padding-top: var(--section-small);
+  padding-bottom: var(--section-small);
+}
+.section--small--margin {
+  margin-top: var(--section-small) !important;
+  margin-bottom: var(--section-small) !important;
+}
+.section--medium--padding {
+  padding-top: var(--section-medium);
+  padding-bottom: var(--section-medium);
+}
+.section--medium--margin {
+  margin-top: var(--section-medium);
+  margin-bottom: var(--section-medium);
+}
+.section--big--padding {
+  padding-top: var(--section-big);
+  padding-bottom: var(--section-big);
+}
+.section--big--margin {
+  margin-top: var(--section-big);
+  margin-bottom: var(--section-big);
+}
+
+.section--dark {
+  background-color: var(--color-background--dark);
+  color: var(--color-text--white);
+}
+
+.section--beige {
+  background-color: var(--color-background--beige);
+}

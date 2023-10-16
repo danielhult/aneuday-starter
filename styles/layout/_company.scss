@@ -1,0 +1,5 @@
+.company {
+  &__content {
+    @include page-grid;
+  }
+}

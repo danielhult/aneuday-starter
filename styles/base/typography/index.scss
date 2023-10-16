@@ -1,0 +1,51 @@
+@import './type-scale';
+
+@font-face {
+  font-family: 'PP Neue Regular';
+  src: url('./fonts/ppneue.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: calc(100vw / var(--desktop-width) * 10);
+}
+
+body {
+  font-family: 'PP Neue Regular', sans-serif;
+  font-size: clamp(16px, 1.6rem, 1.6rem);
+  font-weight: 400;
+  font-style: normal;
+  text-size-adjust: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  @include fluid-type(430px, 1440px, 32px, 48px);
+  margin-bottom: 64px;
+  line-height: 1.3;
+}
+
+h2,
+.h2 {
+  @include fluid-type(430px, 1440px, 24px, 40px);
+  line-height: 1.2;
+  margin-bottom: 40px;
+}

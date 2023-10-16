@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+
+  &__hamburger {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 24px;
+    height: 1px;
+    background-color: var(--color-primary);
+  }
+}
